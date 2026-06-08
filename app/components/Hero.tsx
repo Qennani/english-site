@@ -46,10 +46,10 @@ export default function Hero() {
           <div
             className="absolute z-[5] pointer-events-none"
             style={{
-              width: "1100px",
-              height: "1100px",
+              width: "1000px",
+              height: "1000px",
               top: "50%",
-              right: "-150px",
+              right: "-80px",
               transform: "translateY(-50%)",
             }}
           >
@@ -184,11 +184,11 @@ function CloudLogin({ mobile = false }: { mobile?: boolean }) {
   }, [mobile]);
 
   // Размеры для разных версий
-  const size = mobile ? "min(90vw, 500px)" : "100%";
-  const eyeSize = mobile ? "60px" : "100px";
-  const eyeBorder = mobile ? 4 : 6;
-  const eyeGap = mobile ? "24px" : "40px";
-  const formWidth = mobile ? "min(75%, 280px)" : "350px";
+  const size = mobile ? "min(110vw, 850px)" : "100%";
+const eyeSize = mobile ? "75px" : "100px";        // глаза тоже больше
+const eyeBorder = mobile ? 5 : 6;
+const eyeGap = mobile ? "30px" : "40px";
+const formWidth = mobile ? "min(70%, 300px)" : "350px";
 
   return (
     <div
